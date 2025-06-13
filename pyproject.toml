@@ -1,0 +1,29 @@
+[project]
+name = "grade-counter"
+version = "0.1.0"
+description = ""
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{ name = "Kacper The Programmer" }]
+dependencies = ["flet==0.28.3"]
+
+[tool.flet]
+org = "me.kacpertheprogrammer"
+
+product = "grade counter"
+
+company = "Kacper The Programmer"
+
+copyright = "Copyright (C) 2025 by Kacper The Programmer"
+
+[tool.flet.app]
+path = "src"
+
+[tool.uv]
+dev-dependencies = ["flet[all]==0.28.3"]
+
+[tool.poetry]
+package-mode = false
+
+[tool.poetry.group.dev.dependencies]
+flet = { extras = ["all"], version = "0.28.3" }
